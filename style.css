@@ -15,8 +15,6 @@ body {
 
 }
 
-
-
 .logoclr {
     color: white;
     height: 25px;
@@ -36,10 +34,12 @@ body {
 .fontcontent {
     font-family: var(--fontcontent);
 }
-.fontcontent1{
+
+.fontcontent1 {
     font-family: var(--fontcontent);
     font-size: 20px;
 }
+
 a {
     text-decoration: none;
     color: white;
@@ -114,16 +114,23 @@ a {
         flex-basis: auto;
         justify-content: center;
     }
+
+
+
+
+    @media (max-width: 992px) {
+        .navbar-nav .nav-link {
+            text-align: start !important;
+        }
+    }
+
+    
 }
-
-
-
 @media (max-width: 992px) {
-    .navbar-nav .nav-link {
-        text-align: start !important;
+    .gitbutton {
+        display: none !important;
     }
 }
-
 
 .eduimg {
     height: 250px;
@@ -149,14 +156,16 @@ a {
     display: flex;
     justify-content: center;
 }
+
 .blobimg {
     height: 80vh;
     background-image: url(./images/swathipriya.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-   
+
 }
+
 /* skill */
 .skillsLeftSec,
 .skillsRightSec {
@@ -426,3 +435,4 @@ i {
 .footend a {
     color: white !important;
 }
+
